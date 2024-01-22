@@ -1,0 +1,97 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #586f88;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    font-style: italic;
+    color: #ddd;
+}
+
+.box {
+    background-color: #033469;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: none;
+    margin: 0 auto;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#userData {
+    text-align: center;
+    margin-top: 30px;
+    color: #f7f8f9;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+#userData img {
+    border: 5px solid #fff;
+    border-radius: 50%;
+    max-width: 100px;
+    height: auto;
+}
+
+#repositories {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.repository-box {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    color: #181818;
+    margin-right: 10px; /* Adjust the spacing between boxes */
+    margin-bottom: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: calc(50% - 10px); /* Set width to 50% minus half of the margin-right */
+}
+
+.repository-box h4 {
+    margin-bottom: 5px;
+    color: #007bff;
+}
+
+.badge-secondary {
+    margin-right: 5px;
+}
+
+.pointer {
+    cursor: pointer;
+}
